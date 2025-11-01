@@ -3,13 +3,21 @@ import requests
 
 # -------------- CONFIG ----------------
 BACKEND_URL = "https://propertyfinder-backend.onrender.com/query"
+#BACKEND_URL = "http://localhost:5000/query"
 
 st.set_page_config(page_title="Real Estate Chatbot", layout="wide")
 st.title("🏡 Real Estate AI Assistant")
 
+# Clear button
+col1, col2 = st.columns([6,1])
+with col2:
+    if st.button("🗑️ Clear chat"):
+        st.session_state.messages = []
+
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
 
 
 # -------------- DISPLAY CHAT HISTORY ----------------
@@ -20,6 +28,7 @@ for msg in st.session_state.messages:
 
 # -------------- USER INPUT ----------------
 user_input = st.chat_input("Ask something like: 3BHK in Pune under 1 Cr")
+
 
 if user_input:
 
@@ -71,3 +80,4 @@ if user_input:
             except Exception as e:
                 st.error("❌ Couldn't connect to Flask backend")
                 st.exception(e)
+
