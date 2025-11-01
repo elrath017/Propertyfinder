@@ -1,0 +1,33 @@
+
+# Core web and HTTP
+flask
+requests
+
+# Data
+pandas
+numpy
+
+# Embeddings / Models
+sentence-transformers
+torch
+transformers
+huggingface-hub
+
+# Vector store / similarity search
+faiss-cpu
+
+# LangChain + community/huggingface integrations
+langchain
+langchain-community
+langchain-huggingface
+
+# Google Gemini (GenAI)
+google-genai
+
+# Environment
+python-dotenv
+
+# Frontend
+streamlit
+
+
