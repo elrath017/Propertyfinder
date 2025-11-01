@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # -------------- CONFIG ----------------
-BACKEND_URL = "http://127.0.0.1:5000/query"
+BACKEND_URL = "https://propertyfinder-backend.onrender.com/query"
 
 st.set_page_config(page_title="Real Estate Chatbot", layout="wide")
 st.title("🏡 Real Estate AI Assistant")
