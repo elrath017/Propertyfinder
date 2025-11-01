@@ -25,7 +25,7 @@ python -m venv myenv
 2. Install dependencies:
 
 ```powershell
-pip install -r "c:\Users\rahul\Desktop\NoBrokerage\Property Finder\requirements.txt"
+pip install -r "c:\Users\xyz\Desktop\Property Finder\requirements.txt"
 ```
 
 3. Add your Gemini API key in a `.env` file at the project root:
