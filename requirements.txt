@@ -9,7 +9,6 @@ numpy
 
 # Embeddings / Models
 sentence-transformers
-torch
 transformers
 huggingface-hub
 
@@ -30,4 +29,5 @@ python-dotenv
 # Frontend
 streamlit
 
+gunicorn
 
